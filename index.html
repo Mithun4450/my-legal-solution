@@ -4,15 +4,146 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+     <!-- Fontawesome -->
+     <script src="https://kit.fontawesome.com/0675d7cab4.js" crossorigin="anonymous"></script>
+
+    <!-- Google Font -->
+    <!-- garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+   <style>
+    .font-garamond{
+      font-family: 'EB Garamond', serif;
+    }
+    .font-poppins{
+      font-family: 'Poppins', sans-serif;
+    }
+   </style>
 
     <!-- Tailwind and Daisy Script -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@3.4.0/dist/full.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    
+
     <!-- Tailwind Customize config -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'btn-color':'#B68C5A',
+              }
+            }
+          }
+        }
+      </script>
 
 </head>
-<body>
-    
+
+
+<body class="font-poppins">
+    <header>
+      <!-- Navbar -->
+      <section class="container mx-auto">
+        <!-- Navbar -->
+        <div class="navbar bg-base-100">
+          <div class="navbar-start">
+            <div class="dropdown">
+              <label tabindex="0" class="btn btn-ghost lg:hidden">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+              </label>
+              <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                <li><a>Home</a></li>
+                <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+                <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+                
+              </ul>
+            </div>
+            <img src="images/logo2.png" alt="">
+          </div>
+          <div class="navbar-center hidden lg:flex">
+            <ul class="menu menu-horizontal px-1">
+              <li><a>Home</a></li>
+              <li><a>Services<i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a>Cases<i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a>Blog<i class="fa-solid fa-chevron-right"></i></a></li>
+              <li><a>Contact Us<i class="fa-solid fa-chevron-right"></i></a></li>
+              
+            </ul>
+          </div>
+          <div class="navbar-end">
+            <a class="btn bg-btn-color text-white font-normal text-sm md:text-xl ">Free Consultation</a>
+          </div>
+        </div>
+
+        <!-- Bannar -->
+        <div class="hero min-h-[calc(100vh-68px)]" style="background-image: url(images/banner.png);">
+          <div class="hero-overlay bg-opacity-60"></div>
+          <div class="hero-content text-center text-neutral-content">
+            <div class="max-w-md">
+              <h1 class="mb-5 font-garamond text-6xl font-extrabold">We Provide Effective <br> Legal Solutions</h1>
+              <p class="mb-5">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <input class="px-9 py-3 rounded-lg" type="text" name="" id="" placeholder="Search your services">
+              <button class="btn bg-btn-color">Search</button>
+            </div>
+          </div>
+        </div>
+
+
+      </section>
+     
+    </header>
+
+
+    <main>
+      <!-- Practice Area -->
+      <section class="max-w-7xl mx-96 my-28">
+        <!-- heading part -->
+        <div class="text-center">
+          <h1 class="font-garamond text-4xl font-extrabold text-[#414040] mb-6">The Legal Practice Area</h1>
+          <p class="text-[#707070] text-base font-normal">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+        </div>
+
+        <!-- Cards part -->
+
+        <div>
+          <!-- first card -->
+          <div class="card w-96 bg-base-100 shadow-xl">
+            <figure class="px-10 pt-10">
+              <img src="/images/business.png" alt="Gavel" class="rounded-xl pb-8" />
+            </figure>
+            <div class="card-body items-center text-center">
+              <h2 class="card-title text-[#414040] font-garamond text-3xl font-extrabold pb-6">Business Law</h2>
+              <p class="text-[#707070] text-base font-normal pb-8">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+              <div class="card-actions">
+                <button class="btn bg-btn-color rounded-full"><i class="fa-solid fa-arrow-right text-white"></i></button>
+              </div>
+            </div>
+          </div>
+
+
+
+
+
+
+
+
+
+
+        </div>
+
+      </section>
+
+    </main>
+    <footer>
+
+    </footer>
 </body>
 </html>
